@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AxeM Team</title>
+
+    <!-- Запрет кэширования страницы -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Prism.js Code Highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-lua.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-c.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-cpp.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-json.min.js"></script>
+
+    <!-- Marked.js Markdown Renderer -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <!-- Подключаем конфиги с параметром версии -->
+    <script src="Configs/Information.js?v=3"></script>
+    <script src="Configs/Creators.js?v=3"></script>
+    <script src="Configs/RobloxPlase.js?v=3"></script>
+    <script src="Configs/TestProject.js?v=3"></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" id="easter-logo">AxeM</a>
+            <nav class="nav-links">
+                <a href="#" class="nav-item" data-tab="tab-info">Info</a>
+                <a href="#" class="nav-item" data-tab="tab-creators">Members</a>
+                <a href="#" class="nav-item" data-tab="tab-git">Projects</a>
+                <a href="#" class="nav-item" data-tab="tab-roblox">Roblox Games</a>
+                <a href="#" class="nav-item" data-tab="tab-tests">Tests</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="profile-container">
+        <section id="tab-info" class="tab-content active" style="padding-top: 40px;">
+            <h1 class="title" id="info-title">AxeM</h1>
+            <p class="subtitle" id="info-subtitle">Loading...</p>
+        </section>
+
+        <section id="tab-creators" class="tab-content">
+            <h2 class="section-title">AxeM Team 💝</h2>
+            <div class="grid-layout" id="creators-container"></div>
+        </section>
+
+        <section id="tab-git" class="tab-content">
+            <h2 class="section-title">Team Projects 📦</h2>
+            <div class="grid-layout" id="github-projects">Loading projects from GitHub...</div>
+        </section>
+
+        <section id="tab-roblox" class="tab-content">
+            <h2 class="section-title">Our Roblox Games 🎲</h2>
+            <div class="grid-layout" id="roblox-container"></div>
+        </section>
+
+        <section id="tab-tests" class="tab-content">
+            <h2 class="section-title">Current Tests & Tasks 🧩</h2>
+            <div class="grid-layout" id="tests-container"></div>
+        </section>
+
+        <footer class="footer">crafted with ♡ by AxeM Team</footer>
+    </main>
+
+    <!-- Modal Window -->
+    <div class="modal-overlay" id="code-modal">
+        <div class="modal-box">
+            <div class="modal-header">
+                <span id="modal-filename">File</span>
+                <button class="modal-close" onclick="closeCodeModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <pre><code id="modal-code" class="language-lua">Loading...</code></pre>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подключаем основные скрипты приложения -->
+    <script src="js/soundEngine.js?v=3"></script>
+    <script src="js/modal.js?v=3"></script>
+    <script src="js/githubFS.js?v=3"></script>
+    <script src="js/app.js?v=3"></script>
+</body>
+</html>
