@@ -17,7 +17,7 @@ window.AXEM_CREATORS = [
         "links": {
             "github": "https://github.com/thezeldaaa",
             "roblox": "https://www.roblox.com/users/4950181670/profile",
-            "telegram": "https://t.me/",
+            "telegram": "https://t.me/elsewhere",
             "discord": "https://discord.gg/uvCynqPhe"
         }
     }
