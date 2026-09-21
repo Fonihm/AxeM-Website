@@ -7,7 +7,7 @@ window.AXEM_CREATORS = [
             "github": "https://github.com/Fonihm",
             "roblox": "https://www.roblox.com/users/4490100749/profile",
             "telegram": "https://t.me",
-            "discord": "https://discord.com"
+            "discord": "https://discord.gg/uvCynqPhe"
         }
     },
     {
@@ -18,7 +18,7 @@ window.AXEM_CREATORS = [
             "github": "https://github.com/thezeldaaa",
             "roblox": "https://www.roblox.com/users/4950181670/profile",
             "telegram": "https://t.me/",
-            "discord": "https://discord.com"
+            "discord": "https://discord.gg/uvCynqPhe"
         }
     }
 ]
